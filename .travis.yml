@@ -1,0 +1,9 @@
+language: express
+node_js: express
+deploy:
+  provider: heroku
+  api_key:
+    secure: <8c6a205d1463f2f6a5bdcb8f9557e92c>
+  app: <pet-match-application>
+  on:
+    repo: <https://pet-match-application-dobs1211.c9users.io>
