@@ -1,0 +1,8 @@
+.hoverbox {
+    position: absolute;
+    background: #ddd;
+    padding: 4px;
+    width: 200px;
+    display: none;
+}
+a:hover + .hoverbox, .hoverbox:hover { display: block }
