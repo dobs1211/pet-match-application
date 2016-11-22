@@ -1,14 +1,11 @@
 header h1 img{width: 15px}
 
 body {
-	background: url(../images/classy_fabric.png);
-	color: white;
+	background: url(../images/tennis-ball-background.png);
+	color: gold ;
 	font-size: 20px;
-		text-shadow: 
-		1px 1px 0 transparent,
-		2px 2px 0 #101010;
-	overflow: hidden;
-}
+		}
+
 
 <style type="text/css" media="screen"> body {
     background-color: #000000;
