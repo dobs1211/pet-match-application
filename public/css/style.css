@@ -34,22 +34,18 @@ CSS reset
 General styles (General Module, wrapping around the modules bellow)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
-
-html {
-    background: rgba(0, 0, 0, 0) url("../images/yellow-background.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+element.style {
 }
-
 body {
     color: white;
 }
-
-ul,
-ol {
-    list-style-type: none;
+body {
+    background: url(../images/tennis-ball-background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: ;
+    color: black;
+    font-size: 20px;
 }
 
 
@@ -57,6 +53,7 @@ ol {
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
+
 
 
 /* -------------------------------------
@@ -69,7 +66,7 @@ header,
 section {
     width: 40%;
     margin: 0 auto;
-    background-image: url("../images/transparent.jpg");
+    background-image: url("../images/9897387-transparent-brown-oil-paint-on-canvas-painted-background-Stock-Photo.jpg");
     border-radius: 0.5rem;
     padding: 15px;
 }

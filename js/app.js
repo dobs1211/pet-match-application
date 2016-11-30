@@ -1,16 +1,16 @@
-/* Step 1 - define dog types */
+/* Step 1 - define dog types preferences */
 
 var canines = {
-    activityLevel: ["struggle to sit still", "Or do you prefer hanging out around the house for the most part", "And give yourself a 3 if a six hr movie marathon is right up your alley!"],
-    cleanFreak: ["Are you a clean-freak, Dust bunnies are your nemisis", "Give yourself a 2 if you are ok with day to day messes", "give yourself a 3 if messes mean your living...bring it!"],
-    smartCanine: ["Would you like your canine friend to be super smart and help you with your taxes", "Smart, but not too smart", "would you rather it just be happy having you call the shots, take a 3"],
-    securityDog: ["Do you want your dog to bark to alert you anything is amiss, give yourself a 1", "a bark every now an then when necessary, give yourself a 2", "Silence king in your home, give yourself a 3"],
+    activityLevel: ["struggle to sit still? give yourself a 1" "a two if you prefer hanging out around the house for the most part", "And give yourself a 3 if a six hr movie marathon is right up your alley!"],
+    cleanFreak: ["Are you a clean-freak, Dust bunnies are your nemisis- give yourself a 1", "Give yourself a 2 if you are ok with day to day messes", "give yourself a 3 if messes mean your really living...bring it!"],
+    smartCanine: ["Would you like your canine friend to be super smart and help you with your taxes? Take a 1", "Smart, but not too smart- take a 2", "or would you rather it just be happy having you call the shots, take a 3"],
+    securityDog: ["Do you want your dog to be your protector?, give yourself a 1", "a bark every now and then when necessary, give yourself a 2", "Silence is king in your home, give yourself a 3"],
     homeSize: ["Give yourself a 1 if you have an apartment or small home/no yard.", "2 if you have a decent size home with smallish yard", "Plenty of space and a yard for outdoor fun?! Give yourself a 3"],
-    canineSize: ["give yourself a 1 if tiny is good", "a 2 if you might like picking up your dog every once in a while", "a 3 if a larger dog is fine by me"]
+    canineSize: ["give yourself a 1 if tea cup size is good", "a 2 if you might like picking up your dog every once in a while without breaking your back", "and a 3 if a larger dog is fine by me- no picking up necessary"],
 };
 
 //use selections by user
-var Order = function (orderValues) {
+var Match = function (orderValues) {
     this.activityLevel = orderValues[0];
     this.cleanFreak = orderValues[1];
     this.smartCanine = orderValues[2];
@@ -19,12 +19,12 @@ var Order = function (orderValues) {
 };
 
 //determine type of canine
-var Drink = function (pantry, drinkOrder) {
+var CanineType = function (canines, Match) {
     var ingredientNumber = [];
     var ingredientsArray = [];
 
     for (var userPreference in drinkOrder) {
-        //generate a random number in order to pick up on ingredient in each ingredients category  (for example choose "slug of whisky" for a dring where the client selected the "strong" category of ingredients)
+        //generate an appropriate match for user using the selections from above to determine best choice dog for them
         ingredientNumber = generateRandomNumber(0, 2);
         if (drinkOrder[userPreference]) {
             //for each one of the ingredient categories chose one random ingredient and populate the ingredientsArray with it
@@ -36,7 +36,7 @@ var Drink = function (pantry, drinkOrder) {
 
 /* Step 2 - define the functions which are going to use the main objects of the app */
 
-//changes the ingredient names from whichever case the are to "Title Case"
+//changes the canine choices from whichever case they are to "Title Case"
 var toTitleCase = function (str) {
     // "/\w\S*/g" is a regular expression (http://www.regular-expressions.info/) which searches for all words in a phrase ignoring the spaces
     return str.replace(/\w\S*/g, function (txt) {

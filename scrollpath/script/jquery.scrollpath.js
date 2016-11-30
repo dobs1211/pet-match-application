@@ -615,7 +615,7 @@
 		}
 		return value;
 	}
-
+ 
 	/* 'Snaps' a value to be a multiple of a given snap value */
 	function snap( value, snapValue ) {
 		var mod = value % snapValue;
