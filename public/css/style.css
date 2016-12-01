@@ -34,16 +34,12 @@ CSS reset
 General styles (General Module, wrapping around the modules bellow)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
-element.style {
-}
-body {
-    color: white;
-}
+
 body {
     background: url(../images/tennis-ball-background.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: ;
+    background-position: center center;
     color: black;
     font-size: 20px;
 }
@@ -53,7 +49,6 @@ body {
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
-
 
 
 /* -------------------------------------
@@ -66,7 +61,7 @@ header,
 section {
     width: 40%;
     margin: 0 auto;
-    background-image: url("../images/9897387-transparent-brown-oil-paint-on-canvas-painted-background-Stock-Photo.jpg");
+    background-image: url("../images/classy_fabric.png");
     border-radius: 0.5rem;
     padding: 15px;
 }
@@ -128,6 +123,36 @@ h3 {
 }
 
 
+/*map related styles*/
+
+#map {
+    width: 75%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: 25%;
+    margin-top: 439px;
+    margin-bottom: 100px;
+}
+
+#addressInputHolder {
+    position: relative!important;
+}
+
+#addressInput {
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 150px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 50%;
+}
+
+#addressInput:focus {
+    border-color: #4d90fe;
+}
+
+
 /* -------------------------------------
 Footer styles (Main Module)
 (all the styles inside the < footer > tag)
@@ -139,4 +164,18 @@ place all the desktop styles above this line
 Responsive styles
 (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 place all the mobile tables styles bellow this line
+*/
+
+
+
+/* hover box example to keep
+
+.hoverbox {
+    position: absolute;
+    background: #ddd;
+    padding: 4px;
+    width: 200px;
+    display: none;
+}
+a:hover + .hoverbox, .hoverbox:hover { display: block }
 */
