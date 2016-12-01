@@ -33,8 +33,7 @@ $(document).ready(function () {
     });
 
     $('#againButton').click(function () {
-        document.getElementById('html').style = "background: rgba(0, 0, 0, 0) url('images/texture.jpg') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;";
-
+        document.getElementById('html').style = "background: rgba(0, 0, 0, 0) url('../public/images/dog-1134492_960_720.jpg') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;";
         $('section.results').hide();
         $('section.questions').hide();
         $('section.intro').show();
@@ -85,7 +84,7 @@ function recordAnswer(answer) {
 }
 
 function setUpResultScreen() {
-    document.getElementById('html').style = "background: rgba(0, 0, 0, 0) url('images/gritty-cowboy.jpg') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;";
+    document.getElementById('html').style = "background: rgba(0, 0, 0, 0) url('../public/images/orange.jpg') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;";
     var total = 0;
 
     $('section.results ul').empty();

@@ -1,70 +1,67 @@
-//needs modified for dog match
 var quizData = [
 	{
-		prompt: 'Are you always on the go? Do you struggle to just sit still?',
+		prompt: 'You will make time to exercise your dog.',
 		answers: [
-			{text: 'Very much like me', score: 0},
-			{text: 'Somewhat like me', score: 50},
-			{text: 'Not like me at all', score: 100}
+			{text: '1. Very much like me', score: 1},
+			{text: '2. Somewhat like me', score: 2},
+			{text: '3. Not like me at all', score: 3}
 		]
 	},
 	{
-		prompt: 'Are you a clean-freak, dust bunnies your nemisis?',
+		prompt: 'You like to keep house clean, free of messes and dust.',
 		answers: [
-			{text: 'Very much like me', score: 100},
-			{text: 'Somewhat like me', score: 50},
-			{text: 'Not like me at all', score: 0}
+			{text: '1. Very much like me', score: 1},
+			{text: '2. Somewhat like me', score: 2},
+			{text: '3. Not like me at all', score: 3}
 		]
 	},
 	{
-		prompt: 'Would you like your canine friend to be super smart and help you with your taxes?',
+		prompt: 'You will train your dog to learn simple commands.',
 		answers: [
-			{text: 'Very much like me', score: 0},
-			{text: 'Mostly like me', score: 25},
-			{text: 'Somewhat like me', score: 50},
-			{text: 'Not much like me', score: 75},
-			{text: 'Not like me at all', score: 100}
+			{text: '1. Very much like me', score: 1},
+			{text: '2. Somewhat like me', score: 2},
+			{text: '3. Not like me at all', score: 3}
 		]
 	},
 	{
-		prompt: 'Do you want your dog to bark to alert you anything is amiss? Security is key',
+		prompt: 'You are looking at a dog for protection.',
 		answers: [
-			{text: 'Very much like me', score: 100},
-			{text: 'Mostly like me', score: 75},
-			{text: 'Somewhat like me', score: 50},
-			{text: 'Not much like me', score: 25},
-			{text: 'Not like me at all', score: 0}
+			{text: '1. Very much like me', score: 1},
+			{text: '2. Somewhat like me', score: 2},
+			{text: '3. Not like me at all', score: 3}
 		]
 	},
 	{
-		prompt: 'What size home do you have?',
+		prompt: 'Your home is sized appropriately to have a dog.',
 		answers: [
-			{text: 'Very much like me', score: 0},
-			{text: 'Mostly like me', score: 25},
-			{text: 'Somewhat like me', score: 50},
-			{text: 'Not much like me', score: 75},
-			{text: 'Not like me at all', score: 100}
+			{text: '1. Very much like me', score: 1},
+			{text: '2. Somewhat like me', score: 2},
+			{text: '3. Not like me at all', score: 3}
 		]
 	},
 	{
-		prompt: 'I have difficulty maintaining my focus on projects that take more than a few months to complete.',
+		prompt: 'I have small children in the home (under 5).',
 		answers: [
-			{text: 'Very much like me', score: 0},
-			{text: 'Mostly like me', score: 25},
-			{text: 'Somewhat like me', score: 50},
-			{text: 'Not much like me', score: 75},
-			{text: 'Not like me at all', score: 100}
+			{text: '1. Very much like me', score: 1},
+			{text: '2. Somewhat like me', score: 2},
+			{text: '3. Not like me at all', score: 3}
 		]
 	},
 	{
-		prompt: 'Canines come in all sizes, from tea cup size to mini horse size...',
+		prompt: 'Grown up with dogs most of my life.',
 		answers: [
-			{text: 'Very much like me', score: 100},
-			{text: 'Mostly like me', score: 75},
-			{text: 'Somewhat like me', score: 50},
-			{text: 'Not much like me', score: 25},
-			{text: 'Not like me at all', score: 0}
+			{text: '1. Very much like me', score: 1},
+			{text: '2. Somewhat like me', score: 2},
+			{text: '3. Not like me at all', score: 3}
 		]
-	},
+	},	
+	{
+		prompt: 'Drooling will not be a huge problem for me',
+		answers: [
+			{text: '1. Very much like me', score: 1},
+			{text: '2. Somewhat like me', score: 2},
+			{text: '3. Not like me at all', score: 3}
+		]
+	},	
 	
 ];

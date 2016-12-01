@@ -1,10 +1,11 @@
 <!doctype html >
-<html lang="en">
+<html lang="en" id="html" style="background: rgba(0, 0, 0, 0) url('../public/images/cover-photo.jpeg') no-repeat center center fixed;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
 
 <head>
     <meta charset="UTF-8">
-    <title>Dog Match Quiz</title>
+    <title>Dog Match</title>
     <link rel="stylesheet" href="../public/css/scrollpath.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" charset="utf-8">
 </head>
 
@@ -12,35 +13,38 @@
     <!--starting the scroll path-->
     <div class="wrapper">
         <div class="demo">
-            <h1>jQuery Scroll Path</h1>
-            <span class="arrow">&darr;</span> A Quick Demo <span class="arrow">&darr;</span>
-        </div>
+            <!--<img src="../public/images/pootjes06.gif"></img>-->
+            <!--<h1>jQuery Scroll Path</h1>-->
+            <!--<span class="arrow">&darr;</span> A Quick Demo <span class="arrow">&darr;</span>-->
+    <!--    </div>-->
 
-        <div class="description">
-            <span class="big">It's a plugin for defining custom scroll paths.</span>
-        </div>
+    <!--    <div class="description">-->
+    <!--        <span class="big">Will you make time to exercising your dog?</span>-->
+            
+    <!--    </div>-->
 
-        <div class="syntax">
-            <span class="big">It uses canvas flavored syntax to draw lines and arcs.</span>
-        </div>
+    <!--    <div class="syntax">-->
+    <!--        <span class="big">It uses canvas flavored syntax to draw lines and arcs.</span>-->
+    <!--    </div>-->
 
-        <div class="scrollbar">
-            <span class="big">It comes with a custom scrollbar.</span>
-        </div>
+    <!--    <div class="scrollbar">-->
+    <!--        <span class="big">It comes with a custom scrollbar.</span>-->
+    <!--    </div>-->
 
-        <div class="rotations">
-            <span class="big">It also does rotations</span>
-            <span class="upside-down big">in <a href="http://caniuse.com/#feat=transforms2d">supported</a> browsers.</span>
-        </div>
+    <!--    <div class="rotations">-->
+    <!--        <span class="big">It also does rotations</span>-->
+    <!--        <span class="upside-down big">in <a href="http://caniuse.com/#feat=transforms2d">supported</a> browsers.</span>-->
+    <!--    </div>-->
 
         
-    </div>
+    <!--</div>-->
     <!--finishing the scroll path-->
 
     <!--starting the quiz-->
     <section class="intro">
-        <h1>Dog Match Quiz</h1>
-        <p>A place where you can find a canine friend best suited for you! You will be asked a serious of statements. For each statement, select teh response that best describes how well the statement applies to you.
+        <h1>Dog Match</h1>
+        
+        <p>A place where you can find a canine friend best suited for you! You will be asked a series of questions. For each question, select the response that best applies to you.
         </p>
         <button id="startButton">Fetch! a Match >></button>
     </section>
@@ -49,17 +53,20 @@
         <h2 id="prompt"></h2>
         <ul class="answers">
         </ul>
-
-        <h3>Question <span class="count"></span> of <span class="totalCount"></span></h3>
+        
+    <h3>Question <span class="count"></span> of <span class="totalCount"></span></h3>
     </section>
-
+    
     <section class="results">
-        <h2>Your score is: <span id="result"></span>%</h2>
-        <h3>Here are your matches:</h3>
+        <h2>Your selections: <span id="result"></span>%</h2>
+        <h3>Look at your scores and see if you picked mostly 1's, mostly 2's or mostly 3's.</h3>
         <ul></ul>
-
+        <h4>Once you have looked over your selections you can see what you selected the most. This will help determine what dog type fits you best.
+            <br />
+            If you picked mostly 1's: 
+        </h4>
         <button id="againButton">Try again >></button>
-    </section>
+    
     <!--finishing the quiz-->
 
     <!--starting the map-->
@@ -218,6 +225,7 @@
     <script type="text/javascript" src="../scrollpath/script/demo.js"></script>
 
     <!--connect data and quiz    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="js/data.js"></script>
     <script src="js/quiz.js"></script>
 </body>
