@@ -11,33 +11,35 @@
 
 <body>
     <!--starting the scroll path-->
+    
     <div class="wrapper">
         <div class="demo">
-            <!--<img src="../public/images/pootjes06.gif"></img>-->
-            <!--<h1>jQuery Scroll Path</h1>-->
-            <!--<span class="arrow">&darr;</span> A Quick Demo <span class="arrow">&darr;</span>-->
-    <!--    </div>-->
+            <img src="../public/images/pootjes06.gif"></img>
+            <h1>jQuery Scroll Path</h1>
+            <span class="arrow">&darr;</span> A Quick Demo <span class="arrow">&darr;</span>
+        </div>
 
-    <!--    <div class="description">-->
-    <!--        <span class="big">Will you make time to exercising your dog?</span>-->
+        <div class="description">
+            <span class="big">It's a plugin for defining custom scroll paths.</span>
             
-    <!--    </div>-->
+        </div>
 
-    <!--    <div class="syntax">-->
-    <!--        <span class="big">It uses canvas flavored syntax to draw lines and arcs.</span>-->
-    <!--    </div>-->
+        <div class="syntax">
+            <span class="big">It uses canvas flavored syntax to draw lines and arcs.</span>
+        </div>
 
-    <!--    <div class="scrollbar">-->
-    <!--        <span class="big">It comes with a custom scrollbar.</span>-->
-    <!--    </div>-->
+        <div class="scrollbar">
+            <span class="big">It comes with a custom scrollbar.</span>
+        </div>
 
-    <!--    <div class="rotations">-->
-    <!--        <span class="big">It also does rotations</span>-->
-    <!--        <span class="upside-down big">in <a href="http://caniuse.com/#feat=transforms2d">supported</a> browsers.</span>-->
-    <!--    </div>-->
+        <div class="rotations">
+            <span class="big">It also does rotations</span>
+            <span class="upside-down big">in <a href="http://caniuse.com/#feat=transforms2d">supported</a> browsers.</span>
+        </div>
 
         
-    <!--</div>-->
+    </div>
+    
     <!--finishing the scroll path-->
 
     <!--starting the quiz-->
@@ -46,7 +48,7 @@
         
         <p>A place where you can find a canine friend best suited for you! You will be asked a series of questions. For each question, select the response that best applies to you.
         </p>
-        <button id="startButton">Fetch! a Match >></button>
+        <button id="startButton">Fetch!</button>
     </section>
 
     <section class="questions">
@@ -65,7 +67,7 @@
             <br />
             If you picked mostly 1's: 
         </h4>
-        <button id="againButton">Try again >></button>
+        <button id="againButton">Try again</button>
     
     <!--finishing the quiz-->
 
@@ -85,7 +87,6 @@
     <script>
         var map;
         var infowindow;
-
         function initAutocomplete() {
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: {
@@ -170,14 +171,12 @@
                 map.fitBounds(bounds);
             });
         }
-
         function handleLocationError(browserHasGeolocation, infoWindow, pos) {
             infoWindow.setPosition(pos);
             infoWindow.setContent(browserHasGeolocation ?
                 'Error: The Geolocation service failed.' :
                 'Error: Your browser doesn\'t support geolocation.');
         }
-
         function callback(results, status) {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 for (var i = 0; i < results.length; i++) {
@@ -185,7 +184,6 @@
                 }
             }
         }
-
         function createMarker(place) {
             var placeLoc = place.geometry.location;
             var marker = new google.maps.Marker({
@@ -197,7 +195,6 @@
                 infowindow.open(map, this);
             });
         }
-
         function searchLocations(serviceType) {
             var service = new google.maps.places.PlacesService(map);
             service.nearbySearch({
@@ -225,7 +222,7 @@
     <script type="text/javascript" src="../scrollpath/script/demo.js"></script>
 
     <!--connect data and quiz    -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="js/data.js"></script>
     <script src="js/quiz.js"></script>
 </body>

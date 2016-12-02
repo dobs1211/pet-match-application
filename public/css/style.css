@@ -245,10 +245,10 @@ button {
 
 #map {
     width: 75%;
-    height: 300px;
+    height: 50px;
     margin-left: auto;
     margin-right: 25%;
-    margin-top: 439px;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
@@ -287,7 +287,6 @@ place all the mobile tables styles bellow this line
 
 
 /* hover box example to keep
-
 .hoverbox {
     position: absolute;
     background: #ddd;

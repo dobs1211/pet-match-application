@@ -13,7 +13,7 @@
     Copyright 2012, Joel Besada
     MIT Licensed (http://www.opensource.org/licenses/mit-license.php)
 */
-( function ( $, window, document, undefined ) {
+( function ($, window, document, undefined ) {
 	var	PREFIX =  "-" + getVendorPrefix().toLowerCase() + "-",
 		HAS_TRANSFORM_SUPPORT = supportsTransforms(),
 		HAS_CANVAS_SUPPORT = supportsCanvas(),
@@ -33,7 +33,7 @@
 
 		// Default speeds for scrolling and rotating (with path.rotate())
 		speeds = {
-			scrollSpeed: 50,
+			scrollSpeed: 25,
 			rotationSpeed: Math.PI/15
 		},
 
@@ -405,7 +405,7 @@
 
 		e.preventDefault();
 		$( window ).scrollTop( 0 ).scrollLeft( 0 );
-		scrollSteps( -dir * STEP_SIZE );
+		scrollSteps( -dir * STEP_SIZE);
 	}
 
 	/* Handles key scrolling (arrows and space) */

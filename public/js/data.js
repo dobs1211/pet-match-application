@@ -24,7 +24,7 @@ var quizData = [
 		]
 	},
 	{
-		prompt: 'You are looking at a dog for protection.',
+		prompt: 'You want a dog to be a companion, not necessarily for protection.',
 		answers: [
 			{text: '1. Very much like me', score: 1},
 			{text: '2. Somewhat like me', score: 2},
@@ -32,7 +32,7 @@ var quizData = [
 		]
 	},
 	{
-		prompt: 'Your home is sized appropriately to have a dog.',
+		prompt: 'Your home is dog proofed and has a yard.',
 		answers: [
 			{text: '1. Very much like me', score: 1},
 			{text: '2. Somewhat like me', score: 2},
@@ -40,7 +40,7 @@ var quizData = [
 		]
 	},
 	{
-		prompt: 'I have small children in the home (under 5).',
+		prompt: 'I do not have small children in the home (under 5).',
 		answers: [
 			{text: '1. Very much like me', score: 1},
 			{text: '2. Somewhat like me', score: 2},
@@ -56,7 +56,7 @@ var quizData = [
 		]
 	},	
 	{
-		prompt: 'Drooling will not be a huge problem for me',
+		prompt: 'Drooling is a huge problem for me',
 		answers: [
 			{text: '1. Very much like me', score: 1},
 			{text: '2. Somewhat like me', score: 2},
