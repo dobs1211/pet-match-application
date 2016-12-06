@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Api test</title>
-    <script type="text/javascript" src="https://crossorigin.me/http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -18,6 +18,7 @@
             We would like to see if we can get an valid JSON result which we can parse in using AJAX
             */
             /* Update all the parameters for your API test*/
+            
             var params = {
                 "key": "6d76ac6705f749eb1062fd7d56bd9498",
                 "animal": "cat",
@@ -30,8 +31,8 @@
             };
             var result = $.ajax({
                 /* update API end point */
-                url: "https://crossorigin.me/http://api.petfinder.com/pet.find",
-                data: params,
+                url: "https://crossorigin.me/http://api.petfinder.com/pet.find?key=o7JXfPql&animal=cat&sex=M&location=89521&count=25&output=full&format=json",
+                //data: params,
                 dataType: "jsonp",
                 /*set the call type GET / POST*/
                 type: "GET"
