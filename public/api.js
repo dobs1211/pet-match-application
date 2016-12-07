@@ -21,7 +21,7 @@
 
   };
 
-  $.getJSON('https://crossorigin.me/http://api.petfinder.com/pet.find?key=o7JXfPql&animal=cat&sex=M&location=89521&count=25&output=full&format=json')
+  $.getJSON('https://crossorigin.me/http://api.rescuegroups.org/pet.find?key=o7JXfPql&animal=cat&sex=M&location=89521&count=25&output=full&format=json')
       .done(function(petApiData) {
               alert('Data retrieved!');
               console.log("simple API call",  petApiData);
@@ -30,30 +30,30 @@
               alert('Error retrieving data!');
           });
 
-  // var result = $.ajax({
-  //   /* update API end point */
-  //   url: "https://crossorigin.me/http://api.petfinder.com/my.method?format=json&key=o7JXfPql&callback=?",
-  //   //data: params,
-  //   dataType: "jsonp",
-  //   /*set the call type GET / POST*/
-  //   type: "GET"
-  //  })
-  //  /* if the call is successful (status 200 OK) show results */
-  //  .done(function(result) {
-  //   /* if the results are meeningful, we can just console.log them */
-  //   console.log(result);
-  //   /* if the results are not meeningful, it might help to convert them to string first
-  //   var displayStringifiedResults = JSON.stringify(result);
-  //   console.log(displayStringifiedResults);*/
-  //   /* if the results contain invalid json, it might help to sanitize them first
-  //   var displaySanitizedResults = sanitizeJSON(result);
-  //   console.log(displaySanitizedResults);*/
-  //  })
-  //  /* if the call is NOT successful show errors */
-  //  .fail(function(jqXHR, error, errorThrown) {
-  //   console.log(jqXHR);
-  //   console.log(error);
-  //   console.log(errorThrown);
-  //  });
+  var result = $.ajax({
+    /* update API end point */
+    url: "https://crossorigin.me/http://api.rescuegroups.org/my.method?format=json&key=o7JXfPql&callback=?",
+    //data: params,
+    dataType: "jsonp",
+    /*set the call type GET / POST*/
+    type: "GET"
+   })
+   /* if the call is successful (status 200 OK) show results */
+   .done(function(result) {
+    /* if the results are meeningful, we can just console.log them */
+    console.log(result);
+    /* if the results are not meeningful, it might help to convert them to string first
+    var displayStringifiedResults = JSON.stringify(result);
+    console.log(displayStringifiedResults);*/
+    /* if the results contain invalid json, it might help to sanitize them first
+    var displaySanitizedResults = sanitizeJSON(result);
+    console.log(displaySanitizedResults);*/
+   })
+   /* if the call is NOT successful show errors */
+   .fail(function(jqXHR, error, errorThrown) {
+    console.log(jqXHR);
+    console.log(error);
+    console.log(errorThrown);
+   });
 
  });
