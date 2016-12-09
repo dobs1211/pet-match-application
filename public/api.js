@@ -11,7 +11,7 @@
   */
   /* Update all the parameters for your API test*/
   var params = {
-   "key": "o7JXfPql",
+   "key": "6d76ac6705f749eb1062fd7d56bd9498",
    "animal": "cat",
    "sex": "M",
    "location": 89521,
@@ -21,7 +21,7 @@
 
   };
 
-  $.getJSON('https://crossorigin.me/http://api.rescuegroups.org/pet.find?key=o7JXfPql&animal=cat&sex=M&location=89521&count=25&output=full&format=json')
+  $.getJSON('https://crossorigin.me/http://api.petfinder.com/pet.find?key=6d76ac6705f749eb1062fd7d56bd9498&animal=cat&sex=M&location=89521&count=25&output=full&format=json')
       .done(function(petApiData) {
               alert('Data retrieved!');
               console.log("simple API call",  petApiData);
@@ -32,7 +32,7 @@
 
   var result = $.ajax({
     /* update API end point */
-    url: "https://crossorigin.me/http://api.rescuegroups.org/my.method?format=json&key=o7JXfPql&callback=?",
+    url: "https://crossorigin.me/http://api.petfinder.com/my.method?format=json&key=6d76ac6705f749eb1062fd7d56bd9498&callback=?",
     //data: params,
     dataType: "jsonp",
     /*set the call type GET / POST*/

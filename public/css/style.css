@@ -41,6 +41,27 @@ section.intro p {
     margin-bottom: 2rem;
 }
 
+button {
+    background-color: orange;
+    border-color: orange;
+    border-radius: 8px;
+    border-style: none;
+    color: black;
+    font-size: 1.125rem;
+    padding: 0.5rem;
+    text-shadow: none;
+    width: 15%;
+    text-align: center;
+    margin-right: 20%;
+}
+
+.button,
+.output {
+    text-align: center;
+}
+
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-repeat: no-repeat;
@@ -71,7 +92,6 @@ section {
     margin-left: 400px;
     margin-right: auto;
   }
-
 
 button:hover {
     background-color: #707070;
@@ -211,25 +231,6 @@ label {
 
 select {
     float: right;
-}
-
-.button-primary {
-    background-color: orange;
-    border-color: orange;
-    border-radius: 8px;
-    border-style: none;
-    color: black;
-    font-size: 1.125rem;
-    padding: 0.5rem;
-    text-shadow: none;
-    width: 15%;
-    text-align: center;
-    margin-right: 20%;
-}
-
-.button,
-.output {
-    text-align: center;
 }
 
 
